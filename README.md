@@ -47,6 +47,85 @@ The current implementation supports these flows end to end:
 - Tailwind CSS v4
 - Local JSON persistence in [data/demo-store.json](/C:/Users/lamvu/OneDrive/Documents/Lotushacks/data/demo-store.json)
 
+## Framework Visualization
+
+### High-Level Architecture
+
+```mermaid
+flowchart TD
+    U["User"] --> UI["Next.js App Router UI<br/>src/app + src/components"]
+    UI --> API["Route Handlers<br/>src/app/api/*"]
+    UI --> Portal["Supplier Portal Preview<br/>src/app/supplier-portal/[orderId]"]
+
+    API --> Store["Demo Store<br/>src/lib/demo-store.ts"]
+    API --> Intelligence["Procurement Intelligence<br/>src/lib/procurement-intelligence.ts"]
+    API --> Scoring["Supplier Scoring<br/>src/lib/scoring.ts"]
+    API --> Seed["Seed Data + Config<br/>src/lib/seed-data.ts / config.ts"]
+
+    Intelligence --> OCR["OCR Adapter"]
+    Intelligence --> Search["Supplier Search Adapter"]
+    API --> TinyFish["TinyFish Adapter"]
+    API --> Voice["Negotiation + Voice APIs"]
+
+    OCR --> OCRSvc["OCR Service / Mock Fallback"]
+    Search --> SearchSvc["Supplier Search / Mock Fallback"]
+    TinyFish --> TinyFishSvc["TinyFish / Local Draft Fallback"]
+    Voice --> Agora["Agora Call Flow"]
+    Voice --> OpenAI["OpenAI Negotiation"]
+    Voice --> ElevenLabs["ElevenLabs Speech"]
+
+    Store --> Data["data/demo-store.json"]
+```
+
+### Request Flow
+
+```mermaid
+flowchart LR
+    A["Create Request"] --> B["Analyze Quote"]
+    B --> C["Normalize + Enrich Supplier Data"]
+    C --> D["Deterministic Scoring"]
+    D --> E["Recommendation + Negotiation Guidance"]
+    E --> F["Optional Voice Price Check"]
+    F --> G["Create Draft Order"]
+    G --> H["Supplier Portal Preview"]
+```
+
+### Folder Map
+
+```text
+src/
+|-- app/
+|   |-- page.tsx
+|   |-- agora-test/
+|   |-- supplier-portal/[orderId]/
+|   `-- api/
+|       |-- requests/
+|       |-- workflow/analyze/
+|       |-- orders/draft/
+|       |-- quotes/negotiate/
+|       |-- agent/negotiate/
+|       |-- agora/price-check/
+|       |-- openai/credits/
+|       |-- settings/agora-prompt/
+|       `-- reset/
+|-- components/
+|   |-- dashboard-client.tsx
+|   |-- agora-live-call-modal.tsx
+|   |-- integrations-panel.tsx
+|   `-- laptop-call-modal.tsx
+`-- lib/
+    |-- adapters/
+    |   |-- ocr.ts
+    |   |-- supplier-search.ts
+    |   `-- tinyfish.ts
+    |-- demo-store.ts
+    |-- procurement-intelligence.ts
+    |-- scoring.ts
+    |-- seed-data.ts
+    |-- config.ts
+    `-- types.ts
+```
+
 ## Repository Structure
 
 ### Main UI
