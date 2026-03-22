@@ -1,0 +1,449 @@
+{
+  "requests": [
+    {
+      "id": "req_d07a73e7",
+      "title": "Need 100 Dell 27-inch monitors for the new office",
+      "productName": "Dell 27-inch Monitor",
+      "quantity": 100,
+      "specs": "27-inch IPS display, HDMI plus USB-C preferred, delivery to HQ",
+      "status": "draft_created",
+      "createdAt": "2026-03-22T01:40:03.478Z"
+    }
+  ],
+  "activeRequestId": "req_d07a73e7",
+  "agoraSystemPrompt": "You are a B2B procurement negotiation agent for buyer-side sourcing. Always ask one focused question and end with strict JSON.",
+  "extractedQuote": {
+    "id": "extract_c2b47be9",
+    "requestId": "req_d07a73e7",
+    "supplierName": "Northwind Displays",
+    "productName": "Dell 27-inch Monitor",
+    "unitPrice": 253,
+    "quantity": 100,
+    "sourceDocumentName": "northwind-monitor-quote.pdf",
+    "sourceSummary": "Seeded sample quote",
+    "confidence": 0.97,
+    "createdAt": "2026-03-22T01:40:15.602Z"
+  },
+  "supplierQuotes": [
+    {
+      "id": "quote_6af67b9c",
+      "requestId": "req_d07a73e7",
+      "supplierName": "Northwind Displays",
+      "price": 253,
+      "inventory": 120,
+      "deliveryDays": 6,
+      "rating": 4.4,
+      "source": "OCR quote extraction",
+      "priceObserved": true,
+      "extractedFromOCR": true,
+      "supplierSku": "ND-MON27B-Q",
+      "canonicalProductName": "Business Monitor 27-inch Class",
+      "canonicalProductId": "MON-27-BIZ",
+      "baseUnit": "EA",
+      "normalizedRequestedQuantity": 100,
+      "normalizedInventory": 120,
+      "normalizedAvailableStock": 120,
+      "safetyBufferUnits": 15,
+      "netAvailableStock": 105,
+      "stockCoverDays": 31.5,
+      "stockGapUnits": 0,
+      "urgencyLevel": "low",
+      "urgencyScore": 8,
+      "urgencyReason": "Net available stock covers 31.5 days after the safety buffer, comfortably ahead of the 6-day lead time.",
+      "marketVariancePct": 2.5,
+      "marketPosition": "within_market",
+      "baseMoq": 60,
+      "orderMultiple": 10,
+      "recommendedBuyQuantity": 100,
+      "effectiveUnitPrice": 253.68,
+      "moqFit": "exact_fit",
+      "appliedTierLabel": "Request-fit tier",
+      "nextTierQuantity": 120,
+      "nextTierUnitPrice": 249.52,
+      "nextTierSavings": 499.2,
+      "tiers": [
+        {
+          "label": "MOQ tier",
+          "minQty": 60,
+          "unitPrice": 257.55,
+          "effectiveUnitPrice": 258.68,
+          "eligible": true
+        },
+        {
+          "label": "Request-fit tier",
+          "minQty": 100,
+          "unitPrice": 253,
+          "effectiveUnitPrice": 253.68,
+          "eligible": true
+        },
+        {
+          "label": "Volume break",
+          "minQty": 120,
+          "unitPrice": 248.95,
+          "effectiveUnitPrice": 249.52,
+          "eligible": false
+        }
+      ],
+      "inventorySufficient": true,
+      "totalPrice": 25300,
+      "score": 90
+    },
+    {
+      "id": "quote_527e7bac",
+      "requestId": "req_d07a73e7",
+      "supplierName": "25 - 27 inch - Monitors | Dell USA",
+      "price": 248,
+      "priceObserved": false,
+      "inventory": 160,
+      "deliveryDays": 4,
+      "rating": 4.7,
+      "source": "Live supplier search (price unavailable, estimate used)",
+      "sourceUrl": "https://www.dell.com/en-us/shop/computer-monitors/ar/8605/25-27-inch?appliedRefinements=24271",
+      "agoraFollowUpSuggested": true,
+      "extractedFromOCR": false,
+      "supplierSku": "2-2-MON27B-B",
+      "canonicalProductName": "Business Monitor 27-inch Class",
+      "canonicalProductId": "MON-27-BIZ",
+      "baseUnit": "EA",
+      "normalizedRequestedQuantity": 100,
+      "normalizedInventory": 160,
+      "normalizedAvailableStock": 160,
+      "safetyBufferUnits": 20,
+      "netAvailableStock": 140,
+      "stockCoverDays": 42,
+      "stockGapUnits": 0,
+      "urgencyLevel": "low",
+      "urgencyScore": 8,
+      "urgencyReason": "Net available stock covers 42.0 days after the safety buffer, comfortably ahead of the 4-day lead time.",
+      "marketVariancePct": 0.5,
+      "marketPosition": "within_market",
+      "baseMoq": 80,
+      "orderMultiple": 20,
+      "recommendedBuyQuantity": 100,
+      "effectiveUnitPrice": 248.58,
+      "moqFit": "exact_fit",
+      "appliedTierLabel": "Request-fit tier",
+      "nextTierQuantity": 140,
+      "nextTierUnitPrice": 242.95,
+      "nextTierSavings": 788.2,
+      "tiers": [
+        {
+          "label": "MOQ tier",
+          "minQty": 80,
+          "unitPrice": 251.47,
+          "effectiveUnitPrice": 252.2,
+          "eligible": true
+        },
+        {
+          "label": "Request-fit tier",
+          "minQty": 100,
+          "unitPrice": 248,
+          "effectiveUnitPrice": 248.58,
+          "eligible": true
+        },
+        {
+          "label": "Volume break",
+          "minQty": 140,
+          "unitPrice": 242.54,
+          "effectiveUnitPrice": 242.95,
+          "eligible": false
+        }
+      ],
+      "inventorySufficient": true,
+      "totalPrice": 24800,
+      "score": 99
+    }
+  ],
+  "recommendation": {
+    "requestId": "req_d07a73e7",
+    "supplierName": "25 - 27 inch - Monitors | Dell USA",
+    "score": 99,
+    "rationale": "Recommended supplier: 25 - 27 inch - Monitors | Dell USA. 0.5% above market median, exact MOQ fit at 100 EA, 140 EA net available after safety buffer, and 4-day delivery.",
+    "estimatedSavings": 510,
+    "speedAdvantageDays": 2,
+    "decisionFactors": [
+      "inside the market benchmark band",
+      "exact MOQ fit at 100 EA",
+      "140 EA net available after buffer",
+      "2 days faster lead time"
+    ],
+    "procurementIntelligence": {
+      "canonicalProductName": "Business Monitor 27-inch Class",
+      "canonicalProductId": "MON-27-BIZ",
+      "baseUnit": "EA",
+      "marketBenchmark": {
+        "marketLow": 235.7,
+        "marketMedian": 246.81,
+        "marketHigh": 260.69,
+        "currency": "USD",
+        "priceBandLabel": "$236-$261 normal buy band",
+        "supplierComparisons": [
+          {
+            "supplierName": "Northwind Displays",
+            "quotePrice": 253,
+            "variancePct": 2.5,
+            "position": "within_market"
+          },
+          {
+            "supplierName": "25 - 27 inch - Monitors | Dell USA",
+            "quotePrice": 248,
+            "variancePct": 0.5,
+            "position": "within_market"
+          }
+        ],
+        "summary": "Business Monitor 27-inch Class benchmarks at $247 median per unit, with a normal market band of $236-$261. 25 - 27 inch - Monitors | Dell USA is 0.5% above median, while Northwind Displays is 2.5% above median."
+      },
+      "moqImpact": {
+        "requestedQuantity": 100,
+        "recommendedBuyQuantity": 100,
+        "selectedSupplier": "25 - 27 inch - Monitors | Dell USA",
+        "supplierAnalyses": [
+          {
+            "supplierName": "Northwind Displays",
+            "baseMoq": 60,
+            "orderMultiple": 10,
+            "requestedQuantity": 100,
+            "recommendedBuyQuantity": 100,
+            "moqFit": "exact_fit",
+            "appliedTierLabel": "Request-fit tier",
+            "effectiveUnitPrice": 253.68,
+            "nextTierQuantity": 120,
+            "nextTierUnitPrice": 249.52,
+            "nextTierSavings": 499.2,
+            "tiers": [
+              {
+                "label": "MOQ tier",
+                "minQty": 60,
+                "unitPrice": 257.55,
+                "effectiveUnitPrice": 258.68,
+                "eligible": true
+              },
+              {
+                "label": "Request-fit tier",
+                "minQty": 100,
+                "unitPrice": 253,
+                "effectiveUnitPrice": 253.68,
+                "eligible": true
+              },
+              {
+                "label": "Volume break",
+                "minQty": 120,
+                "unitPrice": 248.95,
+                "effectiveUnitPrice": 249.52,
+                "eligible": false
+              }
+            ]
+          },
+          {
+            "supplierName": "25 - 27 inch - Monitors | Dell USA",
+            "baseMoq": 80,
+            "orderMultiple": 20,
+            "requestedQuantity": 100,
+            "recommendedBuyQuantity": 100,
+            "moqFit": "exact_fit",
+            "appliedTierLabel": "Request-fit tier",
+            "effectiveUnitPrice": 248.58,
+            "nextTierQuantity": 140,
+            "nextTierUnitPrice": 242.95,
+            "nextTierSavings": 788.2,
+            "tiers": [
+              {
+                "label": "MOQ tier",
+                "minQty": 80,
+                "unitPrice": 251.47,
+                "effectiveUnitPrice": 252.2,
+                "eligible": true
+              },
+              {
+                "label": "Request-fit tier",
+                "minQty": 100,
+                "unitPrice": 248,
+                "effectiveUnitPrice": 248.58,
+                "eligible": true
+              },
+              {
+                "label": "Volume break",
+                "minQty": 140,
+                "unitPrice": 242.54,
+                "effectiveUnitPrice": 242.95,
+                "eligible": false
+              }
+            ]
+          }
+        ],
+        "summary": "25 - 27 inch - Monitors | Dell USA fits the request at 100 EA with request-fit tier economics. Northwind Displays needs no MOQ adjustment for the same demand."
+      },
+      "stockContext": {
+        "planningWindowDays": 30,
+        "dailyDemand": 3.3,
+        "selectedSupplier": "25 - 27 inch - Monitors | Dell USA",
+        "supplierContexts": [
+          {
+            "supplierName": "Northwind Displays",
+            "supplierSku": "ND-MON27B-Q",
+            "canonicalProductName": "Business Monitor 27-inch Class",
+            "canonicalProductId": "MON-27-BIZ",
+            "baseUnit": "EA",
+            "normalizedRequestQuantity": 100,
+            "normalizedAvailableStock": 120,
+            "safetyBufferUnits": 15,
+            "netAvailableStock": 105,
+            "stockCoverDays": 31.5,
+            "leadTimeDays": 6,
+            "stockGapUnits": 0,
+            "urgencyLevel": "low",
+            "urgencyScore": 8,
+            "urgencyReason": "Net available stock covers 31.5 days after the safety buffer, comfortably ahead of the 6-day lead time."
+          },
+          {
+            "supplierName": "25 - 27 inch - Monitors | Dell USA",
+            "supplierSku": "2-2-MON27B-B",
+            "canonicalProductName": "Business Monitor 27-inch Class",
+            "canonicalProductId": "MON-27-BIZ",
+            "baseUnit": "EA",
+            "normalizedRequestQuantity": 100,
+            "normalizedAvailableStock": 160,
+            "safetyBufferUnits": 20,
+            "netAvailableStock": 140,
+            "stockCoverDays": 42,
+            "leadTimeDays": 4,
+            "stockGapUnits": 0,
+            "urgencyLevel": "low",
+            "urgencyScore": 8,
+            "urgencyReason": "Net available stock covers 42.0 days after the safety buffer, comfortably ahead of the 4-day lead time."
+          }
+        ],
+        "summary": "25 - 27 inch - Monitors | Dell USA normalizes to MON-27-BIZ in EA units. Net allocatable stock is 140 EA, covering 42.0 days against a 4-day lead time, so urgency is low."
+      },
+      "negotiationGuidance": {
+        "action": "buy_now",
+        "supplierName": "25 - 27 inch - Monitors | Dell USA",
+        "headline": "Buy now: quote is inside the market band with healthy stock cover.",
+        "rationale": "25 - 27 inch - Monitors | Dell USA is 0.5% above median and still covers the requested volume after applying the safety buffer.",
+        "targetUnitPriceLow": 241.87,
+        "targetUnitPriceHigh": 244.45,
+        "askPoints": [
+          "Proceed at the current commercial terms if the supplier confirms stock reservation today.",
+          "If procurement opens a commercial ask, anchor between $242 and $244 per unit.",
+          "Request written confirmation on lead time and reserved stock before final release."
+        ]
+      }
+    }
+  },
+  "draftOrder": {
+    "id": "order_b5a0020f",
+    "referenceId": "DRAFT-20260322-B5A0020F",
+    "requestId": "req_d07a73e7",
+    "supplierName": "25 - 27 inch - Monitors | Dell USA",
+    "productName": "Dell 27-inch Monitor",
+    "quantity": 100,
+    "status": "draft_saved",
+    "createdAt": "2026-03-22T01:42:49.883Z",
+    "executionMode": "mock",
+    "fallbackUsed": true,
+    "portalPath": "/supplier-portal/order_b5a0020f",
+    "contactName": "Maya Chen",
+    "shippingAddress": "44 Harbor View, District 7, Ho Chi Minh City",
+    "notes": "Draft created through the local TinyFish simulator and saved to the demo supplier portal.",
+    "portalName": "25 - Vendor Desk",
+    "portalSessionId": "TF-B5A0020F",
+    "submittedBy": "tinyfish.mock@autosourcingpro.ai",
+    "executionSummary": [
+      "Prepared a supplier-ready payload from the approved recommendation.",
+      "Applied the procurement intelligence buy quantity of 100 EA.",
+      "Opened a supplier portal session with duplicate protection enabled.",
+      "Authenticated the buying session and mapped the order fields.",
+      "Filled the draft order form and saved the draft for final review."
+    ]
+  },
+  "activityEvents": [
+    {
+      "requestId": "req_d07a73e7",
+      "type": "order",
+      "tone": "warning",
+      "message": "TinyFish live execution was unavailable (the TinyFish response could not be validated.), so the draft was completed through the local supplier portal simulator.",
+      "id": "evt_83e7a183",
+      "createdAt": "2026-03-22T01:42:49.904Z"
+    },
+    {
+      "requestId": "req_d07a73e7",
+      "type": "order",
+      "tone": "success",
+      "message": "Draft order DRAFT-20260322-B5A0020F created for 25 - 27 inch - Monitors | Dell USA.",
+      "id": "evt_c08fc456",
+      "createdAt": "2026-03-22T01:42:49.904Z"
+    },
+    {
+      "requestId": "req_d07a73e7",
+      "type": "order",
+      "tone": "info",
+      "message": "Auto-order started for 25 - 27 inch - Monitors | Dell USA at 100 EA.",
+      "id": "evt_328f1fc7",
+      "createdAt": "2026-03-22T01:40:22.759Z"
+    },
+    {
+      "requestId": "req_d07a73e7",
+      "type": "quote",
+      "tone": "warning",
+      "message": "Live OCR was unavailable (the OCR service returned a server error.), so Auto-Sourcing Pro switched to the deterministic demo extractor.",
+      "id": "evt_808930c9",
+      "createdAt": "2026-03-22T01:40:16.966Z"
+    },
+    {
+      "requestId": "req_d07a73e7",
+      "type": "recommendation",
+      "tone": "success",
+      "message": "Procurement intelligence ready: market benchmark, MOQ economics, stock cover, and negotiation guidance calculated.",
+      "id": "evt_aedbc910",
+      "createdAt": "2026-03-22T01:40:16.966Z"
+    },
+    {
+      "requestId": "req_d07a73e7",
+      "type": "recommendation",
+      "tone": "success",
+      "message": "Recommended supplier: 25 - 27 inch - Monitors | Dell USA. 0.5% above market median, exact MOQ fit at 100 EA, 140 EA net available after safety buffer, and 4-day delivery.",
+      "id": "evt_f6d4d5e2",
+      "createdAt": "2026-03-22T01:40:16.966Z"
+    },
+    {
+      "requestId": "req_d07a73e7",
+      "type": "comparison",
+      "tone": "success",
+      "message": "Compared 2 suppliers across market benchmark, MOQ economics, stock cover, delivery, and rating.",
+      "id": "evt_198b5df5",
+      "createdAt": "2026-03-22T01:40:16.964Z"
+    },
+    {
+      "requestId": "req_d07a73e7",
+      "type": "quote",
+      "tone": "success",
+      "message": "Structured fields extracted for Northwind Displays.",
+      "id": "evt_21a8fcbf",
+      "createdAt": "2026-03-22T01:40:16.964Z"
+    },
+    {
+      "requestId": "req_d07a73e7",
+      "type": "quote",
+      "tone": "success",
+      "message": "Quote scanned from northwind-monitor-quote.pdf.",
+      "id": "evt_7634e40e",
+      "createdAt": "2026-03-22T01:40:16.964Z"
+    },
+    {
+      "requestId": "req_d07a73e7",
+      "type": "request",
+      "tone": "success",
+      "message": "Sample request loaded: Need 100 Dell 27-inch monitors for the new office.",
+      "id": "evt_11165a01",
+      "createdAt": "2026-03-22T01:40:03.496Z"
+    },
+    {
+      "id": "evt_331fb392",
+      "requestId": null,
+      "type": "system",
+      "tone": "info",
+      "message": "System ready. Load the seeded request to demo the full source-to-draft flow.",
+      "createdAt": "2026-03-22T01:39:00.905Z"
+    }
+  ]
+}
